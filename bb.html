@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://engine.hotelfriend.com/assets/scripts/bb-installer.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="mainpage-header">
+        <div class="container-fluid top-header">
+            <div class="container">
+                <div class="burger-menu">
+                    <button class="burger burger3"><span></span></button>
+                </div>
+                <div class="logo">
+                    <a href="https://www.lopotaresort.com/en">
+                        <img src="https://www.lopotaresort.com/assets/frontend/imgs/lopota-resort-logo.svg" alt="logo">
+                    </a>
+                </div>
+                <a href="https://booking.lopota.ge/Booking/Inquiry.aspx">
+                    <div class="calendar temp-ts-res"></div>
+                </a>
+                <div class="right-top-header">
+                    <ul class="social-list">
+                        <li class="social-fe"><a href="https://www.facebook.com/LopotaLake/" target="_blank"></a>
+                        </li>
+                        <li class="social-tw"><a href="https://www.instagram.com/lopotalake/?hl=en" target="_blank"></a>
+                        </li>
+                        <li class="social-linkd"><a
+                                href="https://www.linkedin.com/in/lopota-lake-resort-and-spa-589371a8/"
+                                target="_blank"></a></li>
+                        <li class="social-plus"><a href="https://www.youtube.com/user/LopotaResorts"
+                                target="_blank"></a></li>
+                    </ul>
+                    <div class="booking-button temp-booking-button">
+                        <a target="_blank" href="bb.html">Book Services</a>
+                    </div>
+                    <div class="booking-button temp-booking-button">
+                        <a href="https://booking.lopota.ge/Booking/Inquiry.aspx">Check availability</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid nav">
+
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="https://www.lopotaresort.com/en" class="active">Home</a></li>
+                        <li><a href="https://www.lopotaresort.com/en/accommodation">Accommodation</a></li>
+                        <li><a href="https://www.lopotaresort.com/en/restaurant">Restaurants &amp; Bars</a></li>
+                        <li><a href="https://www.lopotaresort.com/en/events">Meetings &amp; Events</a></li>
+                        <li><a href="https://www.lopotaresort.com/en/spa">Spa &amp; Wellness</a></li>
+                        <li><a href="https://www.lopotaresort.com/en/nightlife">Chateau Buera</a></li>
+                        <li><a href="https://www.lopotaresort.com/en/activities">Activities</a></li>
+                        <li><a href="https://www.lopotaresort.com/en/offers">Offers</a></li>
+                        <li><a href="https://www.lopotaresort.com/en/gallery">Gallery</a></li>
+                        <li class="langs main-page">
+
+                            <a href=""> </a>
+                            <a href="">
+
+                                ENG
+                            </a>
+
+                            <ul class="dropdown-langs">
+                                <li class=""><a href="/ka">GEO</a></li>
+                                <li class="selected"><a href="/en ">ENG</a></li>
+                                <li class=""><a href="/ru ">RUS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- <div class="container-fluid animm">
+            <div class="container box-header-container">
+                <div class="mainpage-header-content">
+                    <div class="left-side-mainpage">
+                        <h1>The place where time stands still!</h1>
+                        <p>
+                            Lopota Lake Resort &amp; Spa is ideal for those seeking a peaceful place to rest. Your
+                            personal piece of paradise is located in the Kakheti region of Eastern Georgia,
+                            surrounded by the famous Caucasus mountains, just 2 hours drive from Tbilisi, the
+                            capital.
+                        </p>
+                        <a href="https://www.lopotaresort.com/en/gallery">Learn more</a>
+                    </div>
+                    <div class="right-side-mainpage">
+                        <div class="main-page-anim-white"></div>
+                        <img class="main-imgg" src="https://www.lopotaresort.com/assets/frontend/imgs/lopota-c-n.jpg"
+                            alt="main image">
+                    </div>
+
+                </div>
+                <div class="scroll-down">
+                    <img src="https://www.lopotaresort.com/assets/frontend/icons/scr.svg" width="20px"
+                        alt="scroll down">
+                    <p></p>
+                </div>
+            </div>
+        </div> -->
+    </header>
+    <section class="main-section">
+        <div id="booking-engine"></div>
+    </section>
+
+    <script>
+        !function (e) { var t = "onload" in new XMLHttpRequest ? XMLHttpRequest : XDomainRequest; xmlhttp = new t, xmlhttp.onreadystatechange = function () { if (4 === xmlhttp.readyState && 200 === xmlhttp.status) { document.getElementById("booking-engine").innerHTML = xmlhttp.responseText; document.getElementById("booking-engine").getElementsByTagName("script"); var e = document.querySelector("#booking-engine"); BBinstaller.runScripts(e) } }, xmlhttp.open("GET", "https://engine.hotelfriend.com/load/d59b116493a54f3861e81b1abb67f4c0293978bc?q=" + ["hotel_photo", "services"].join(","), !0), xmlhttp.send() }()
+    </script>
+</body>
+
+</html>
